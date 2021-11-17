@@ -2,4 +2,4 @@
 
 user[['City', 'Region', 'Country']] = user['Location'].str.split(',', 2, expand=True)
 
-user.drop(columns=['Location'])
+user = user.drop(columns=['Location'])
