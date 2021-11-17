@@ -1,0 +1,2 @@
+br = pd.merge(books, bookr, on='ISBN')
+br.groupby(['ISBN', 'Book-Title']).mean()['Book-Rating']
