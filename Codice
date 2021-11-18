@@ -3,3 +3,12 @@
 user[['City', 'Region', 'Country']] = user['Location'].str.split(',', 2, expand=True)
 
 user = user.drop(columns=['Location'])
+
+
+4
+
+merged_books = books[books.duplicated(subset=["Book-Title", "Book-Author", "Publisher"])]
+
+merged_books = merged_books.drop_duplicates(subset=["Book-Title", "Book-Author", "Publisher"])
+
+len(merged_books)
