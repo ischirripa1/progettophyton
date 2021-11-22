@@ -1,2 +1,3 @@
-merge= books.groupby(['Book-Title', 'Book-Author', 'Publisher']).count()
-merge[merge['ISBN']>1]
+merge= books.groupby(['Book-Title', 'Book-Author', 'Publisher'], as_index= False).count()
+merged_books1= merge[merge['ISBN']>1]
+merged_books1= merged_books1[['Book-Title', 'Book-Author', 'Publisher']]
