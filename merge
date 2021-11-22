@@ -1,1 +1,2 @@
 merge= books.groupby(['Book-Title', 'Book-Author', 'Publisher']).count()
+merge[merge['ISBN']>1]
