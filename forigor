@@ -1,0 +1,13 @@
+hello = {}
+a= 24
+i= 1
+b=15
+
+for element in range(15,244,10):
+    if b == element:
+        hello[i]= user.loc[(user['Age'] >= element) & (user['Age'] <= a)]
+    else:
+        a= a+10
+        i= i+1
+        b= b+10
+        
