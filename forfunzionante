@@ -1,0 +1,14 @@
+userage = {}
+userage[1]= user[user['Age'].isnull()]
+i= 2
+element1= 14
+for element in range(0,15,15):
+    userage[i]= user.loc[(user['Age'] >= element) & (user['Age'] <= element1)]
+    i= i+1
+    element1= element1+10
+    for element in range(15,254,10):
+            userage[i]= user.loc[(user['Age'] >= element) & (user['Age'] <= element1)]
+            i= i+1
+            element1= element1+10
+            if element1 == 254:
+                break
